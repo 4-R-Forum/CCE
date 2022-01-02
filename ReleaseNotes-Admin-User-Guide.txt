@@ -1,0 +1,36 @@
+CONCURRENT EDITING OF DOCUMENT FILES USING MS-365
+=================================================
+
+Revisions
+=========
+12/31/2021	v0.1 First prototype, supports v12 and R14
+
+Release notes
+=============
+This simple package is  a prototype containing a single client Method with minor changes to Document ItemType, Life Cycle and Form in the Fixes folder. A property named primary_file is added to Document, so that Files appear directly in main and relationship grids, following the CAD pattern. The 'Open in MS365' button opens a link to the online file. The Toggle button is intended to automate manual steps, not implemented yet. The prototype is intended for exploring uses of MS365 in conjunction with Innovator.
+
+Installation
+============
+1) Import the package using the ImportExport tool
+2) AML is also provided so that it can be deployed using Nash.aspx
+
+User Guide
+==========
+
+10) Create a new Document
+11) Create a new MS365 document, copy its url to the clipboard
+12) Paste url to the ms365_url field on the Document Form
+13) Make yourself Owner
+14) Save and unclaim the Document
+15) Promote the Document to Concurrent editing State
+16) Click the 'Open in MS365' button
+17) -> MS365 opens the link in a new window, for editing.
+18) Multiple MS365 users edit the online file, using step 16
+19) Download the edited online file
+20) Promote the Document from step 14 to Preliminary
+21) Edit the Document
+22) Select the downloaded file as primary_file
+23) Save and unclaim the Document
+24) Process Document as desired
+
+Jon Hodge 01/02/2022

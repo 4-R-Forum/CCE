@@ -1,0 +1,5 @@
+<imports>
+  <package name="ConcurrentEdit" path="ConcurrentEdit\Import">
+    <dependson name="com.aras.innovator.solution.PLM" />
+  </package>
+</imports>
